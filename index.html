@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-
+ 
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
 
-  <body>
+  <body class="page">
     <div class="header">
-      <img src="./eisenhower-matrix.jpg" alt="img" />
+      <img class="img-header" src="./eisenhower-matrix.jpg" alt="img" />
       <a class="link" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
@@ -19,7 +19,7 @@
       <p id="topSectionForAddingElementToList">
         <h3 class="title">Add Item</h3>
         <div class="input-container">
-          <input class="input-text" id="add-task" type="text" />
+          <input class="input-text input-row" id="add-task" type="text" />
           <button class="input-button">Add</button>
         </div>
       </p>
@@ -28,20 +28,20 @@
       <ul class="list" id="incompleteTasks">
         <li class="item">
           <input class="input-checkbox" type="checkbox" />
-          <label class="input-text">Pay Bills</label>
-          <input class="input-text" type="text" />
+          <label class="input-text label-text">Pay Bills</label>
+          <input class="input-text input-row" type="text" />
           <button class="input-button">Edit</button>
           <button class="delete-button">
-            <img src="./remove.svg" alt="img" />
+            <img class="img-delete" src="./remove.svg" alt="img" />
           </button>
         </li>
         <li class="item edit-mode">
           <input class="input-checkbox" type="checkbox" />
-          <label class="input-text">Go Shopping</label>
-          <input class="input-text" type="text" value="Go Shopping" />
+          <label class="input-text label-text">Go Shopping</label>
+          <input class="input-text input-row" type="text" value="Go Shopping" />
           <button class="input-button">Save</button>
           <button class="delete-button">
-            <img src="./remove.svg" alt="img" />
+            <img class="img-delete" src="./remove.svg" alt="img" />
           </button>
         </li>
       </ul>
@@ -50,11 +50,11 @@
       <ul class="list" id="completed-tasks">
         <li class="item">
           <input class="input-checkbox" type="checkbox" checked />
-          <label class="input-text">See the Doctor</label>
-          <input class="input-text" type="text" />
+          <label class="input-text label-text">See the Doctor</label>
+          <input class="input-text input-row" type="text" />
           <button class="input-button">Edit</button>
           <button class="delete-button">
-            <img src="./remove.svg" alt="img" />
+            <img class="img-delete" src="./remove.svg" alt="img" />
           </button>
         </li>
       </ul>
