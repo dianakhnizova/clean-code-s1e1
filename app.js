@@ -34,13 +34,13 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='input-text';
+    label.className='label-text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.className = "input-checkbox";
     editInput.type="text";
-    editInput.className="input-text";
+    editInput.className="input-row";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="input-button";
@@ -84,8 +84,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input.input-text');
-    var label=listItem.querySelector("label.input-text");
+    var editInput=listItem.querySelector('.input-row');
+    var label=listItem.querySelector(".label-text");
     var editBtn=listItem.querySelector(".input-button");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
